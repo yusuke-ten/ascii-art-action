@@ -3,7 +3,7 @@ import * as exec from '@actions/exec'
 
 async function run(): Promise<void> {
   try {
-    await exec.exec(`echo 'test sample'`)
+    await exec.exec('cat asciiArt.txt')
   } catch (error) {
     core.setFailed(error.message)
   }
