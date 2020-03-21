@@ -975,7 +975,7 @@ const exec = __importStar(__webpack_require__(986));
 function run() {
     return __awaiter(this, void 0, void 0, function* () {
         try {
-            yield exec.exec(`echo 'test sample'`);
+            yield exec.exec('cat asciiArt.txt');
         }
         catch (error) {
             core.setFailed(error.message);
